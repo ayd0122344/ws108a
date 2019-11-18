@@ -1,5 +1,19 @@
-    
-<!DOCTYPE html>
+const Koa = require('koa')
+const app = new Koa
+const mt = require('chinese_convert')
+
+//app.use(async (ctx) => 
+app.use(
+    async function(ctx){
+        ctx.type = 'text/html'
+        ctx.body =`${html}` // 回傳資料給與前端
+    }
+)
+
+app.listen(3000)
+console.log("http://localhost:3000") // 監聽Port 3000
+
+function html(){return `<!DOCTYPE html>
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -303,7 +317,4 @@ z-index: 10px;
 <div>
 <p><img class="top col-3" src="https://66.media.tumblr.com/8111ae683a69fe502b0092c8e292bc7f/tumblr_pikqfele1P1snpo44o10_500.gif"/></p>
 <p><img class="lu col-4" src="https://66.media.tumblr.com/e9bde635fc46ae362b2c0b8abc2b8554/tumblr_o6sdyzsVmv1vrnte3o1_400.gif"/></p>
-</div>
-
-</body>
-</html>
+</div>`}
