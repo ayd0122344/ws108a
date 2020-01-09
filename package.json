@@ -17,16 +17,19 @@
   },
   "homepage": "https://github.com/ayd0122344/ws108a#readme",
   "dependencies": {
+    "chinese_convert": "^1.0.8",
     "fs": "0.0.1-security",
     "koa": "^2.11.0",
     "koa-body": "^4.1.1",
     "koa-bodyparser": "^4.2.1",
     "koa-logger": "^3.2.1",
+    "koa-route": "^3.2.0",
     "koa-router": "^7.4.0",
     "koa-session": "^5.12.3",
     "koa-static": "^5.0.0",
     "markdown-it": "^10.0.0",
     "md8": "^1.0.3",
+    "nit": "0.0.5",
     "yargs": "^14.2.0"
   }
 }
